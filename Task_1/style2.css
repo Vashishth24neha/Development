@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2148C0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 84px; /* Vertical gap of 80px, Horizontal gap of 84px */
+}
+
+
+
+.input-box {
+    width: 300px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #2148C0;
+    background: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 142.857% */
+    text-transform: uppercase;
+    color: #000;
+    /* text-align: center; */
+    box-sizing: border-box; /* Add this line */
+    padding: 10px; /* Add padding to prevent content trimming */
+}
+
+
+.input-box:last-child {
+    grid-row: span 2;
+}
+
+/* Optional: Style for the select dropdown arrow */
+.input-box:last-child select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 25px;
+    background: url("arrow-down.png") no-repeat right center;
+}
+
+/* Styling for buttons */
+.button-container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    grid-column: span 2;
+    margin-top: 23px;
+    gap: 84px;
+}
+
+.button {
+    width: 300px;
+    height: 45px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #2148C0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
+    flex-shrink: 0;
+border-radius: 4px;
+background: #FFF;
+}
+
+.button:last-child {
+    margin-right: 0;
+}
+.button-1 {
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    background: #2148C0;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button-2 {
+    color: #2148C0;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 125% */
+    text-transform: uppercase;
+}
+.error {
+    display: flex;
+    width: 300px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #f00;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-top: 4px; 
+}
