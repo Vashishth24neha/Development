@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const discardButton = document.querySelector(".button-1");
     discardButton.addEventListener("click", function () {
-        // Clear any previous error messages and styles
+       
         emailError.textContent = "";
         phoneError.textContent = "";
         emailInput.classList.remove("error-input");
@@ -54,18 +54,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function validateEmail(email) {
-        // Use a regular expression for email validation
+      
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailPattern.test(email);
     }
 
     function validatePhone(phone) {
-        // Use a regular expression for phone number validation
-        const phonePattern = /^[0-9]{10}$/; // Change the pattern as needed
+      
+        const phonePattern = /^[0-9]{10}$/; 
         return phonePattern.test(phone);
     }
-    // Inside the DOMContentLoaded event listener
-// Inside the DOMContentLoaded event listener
+
 const dialogContainer = document.getElementById("dialogContainer");
 const dialogClose = document.getElementById("dialogClose");
 

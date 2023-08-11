@@ -39,10 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
   
     submitButton.addEventListener("click", function (event) {
       if (!checkFormValidity()) {
-        event.preventDefault(); // Prevent form submission if there are errors or fields are not filled
+        event.preventDefault(); 
       }
       window.location.href = 'add.html'
-      // You can add additional logic here for redirection if needed
+    
     });
   });
   

@@ -18,7 +18,8 @@ body {
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(2, 1fr);
     gap: 24px 84px;
-    /* Vertical gap of 80px, Horizontal gap of 84px */
+   
+    
 }
 
 
@@ -42,7 +43,8 @@ body {
     box-sizing: border-box;
     /* Add this line */
     padding: 10px;
-    /* Add padding to prevent content trimming */
+
+    
 }
 
 
@@ -50,7 +52,7 @@ body {
     grid-row: span 2;
 }
 
-/* Optional: Style for the select dropdown arrow */
+
 .input-box:last-child select {
     appearance: none;
     -webkit-appearance: none;
@@ -138,9 +140,9 @@ body {
 .welcome-message {
     position: absolute;
     top: 40px;
-    /* Adjust the top position as needed */
+
     left: -40px;
-    /* Adjust the left position as needed */
+
     width: 300px;
     height: 20px;
     color: #FFF;
@@ -152,7 +154,7 @@ body {
     line-height: 20px;
     text-transform: uppercase;
     margin: 0;
-    /* Remove the margin to stick the "Welcome" message to the left */
+  
     padding: 0;
 }
 
@@ -183,7 +185,7 @@ body {
 .dialog-heading {
     position: absolute;
     top: 67px;
-    /* Adjust this value to position the heading */
+
     left: 0;
     right: 0;
     color: #2148C0;
@@ -197,7 +199,7 @@ body {
     margin: 0;
 }
 
-/* Rest of the existing CSS styles */
+
 
 
 .dialog-text {
@@ -226,7 +228,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 147px;
-    /* Adjust spacing as needed */
+   
 }
 
 .button-container-dialog {
@@ -238,9 +240,9 @@ body {
 
 .dialog-button.button-3 {
     width: 162px;
-    /* Button 2 width */
+   
     height: 45px;
-    /* Button 1 width */
+   
     border: 1px solid #2148C0;
     color: #2148C0;
     text-align: center;
@@ -253,7 +255,6 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     margin-right: 29px;
-    /* Gap between buttons */
 }
 
 .dialog-button.button-4 {
