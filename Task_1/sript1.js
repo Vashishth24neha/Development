@@ -64,4 +64,32 @@ document.addEventListener("DOMContentLoaded", function () {
         const phonePattern = /^[0-9]{10}$/; // Change the pattern as needed
         return phonePattern.test(phone);
     }
+    // Inside the DOMContentLoaded event listener
+// Inside the DOMContentLoaded event listener
+const dialogContainer = document.getElementById("dialogContainer");
+const dialogClose = document.getElementById("dialogClose");
+
+function openDialogBox() {
+    dialogContainer.style.display = "flex";
+}
+
+function closeDialogBox() {
+    dialogContainer.style.display = "none";
+}
+
+submitButton.addEventListener("click", function (event) {
+    if (validateForm()) {
+        event.preventDefault(); // Prevent default form submission
+        openDialogBox();
+    } else {
+        event.preventDefault();
+    }
+});
+
+discardButton.addEventListener("click", function () {
+    closeDialogBox();
+});
+
+
+
 });

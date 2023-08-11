@@ -17,7 +17,8 @@ body {
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px 84px; /* Vertical gap of 80px, Horizontal gap of 84px */
+    gap: 24px 84px;
+    /* Vertical gap of 80px, Horizontal gap of 84px */
 }
 
 
@@ -33,12 +34,15 @@ body {
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    line-height: 20px; /* 142.857% */
+    line-height: 20px;
+    /* 142.857% */
     text-transform: uppercase;
     color: #000;
     /* text-align: center; */
-    box-sizing: border-box; /* Add this line */
-    padding: 10px; /* Add padding to prevent content trimming */
+    box-sizing: border-box;
+    /* Add this line */
+    padding: 10px;
+    /* Add padding to prevent content trimming */
 }
 
 
@@ -77,13 +81,14 @@ body {
     cursor: pointer;
     margin-right: 20px;
     flex-shrink: 0;
-border-radius: 4px;
-background: #FFF;
+    border-radius: 4px;
+    background: #FFF;
 }
 
 .button:last-child {
     margin-right: 0;
 }
+
 .button-1 {
     height: 45px;
     flex-shrink: 0;
@@ -108,9 +113,11 @@ background: #FFF;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 20px; /* 125% */
+    line-height: 20px;
+    /* 125% */
     text-transform: uppercase;
 }
+
 .error {
     display: flex;
     width: 300px;
@@ -125,5 +132,146 @@ background: #FFF;
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
-    margin-top: 4px; 
+    margin-top: 4px;
+}
+
+.welcome-message {
+    position: absolute;
+    top: 40px;
+    /* Adjust the top position as needed */
+    left: -40px;
+    /* Adjust the left position as needed */
+    width: 300px;
+    height: 20px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    /* Remove the margin to stick the "Welcome" message to the left */
+    padding: 0;
+}
+
+.dialog-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.dialog-box {
+    width: 400px;
+    height: 241px;
+    flex-shrink: 0;
+    background: #FFF;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.dialog-heading {
+    position: absolute;
+    top: 67px;
+    /* Adjust this value to position the heading */
+    left: 0;
+    right: 0;
+    color: #2148C0;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Rest of the existing CSS styles */
+
+
+.dialog-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.dialog-close {
+    background-color: #2148C0;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.button-container-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 147px;
+    /* Adjust spacing as needed */
+}
+
+.button-container-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 147px;
+}
+
+.dialog-button.button-3 {
+    width: 162px;
+    /* Button 2 width */
+    height: 45px;
+    /* Button 1 width */
+    border: 1px solid #2148C0;
+    color: #2148C0;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    /* 125% */
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 29px;
+    /* Gap between buttons */
+}
+
+.dialog-button.button-4 {
+    width: 162px;
+    /* Button 2 width */
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 4px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    /* 125% */
+    text-transform: uppercase;
+    border-radius: 4px;
+    background: #2148C0;
 }
