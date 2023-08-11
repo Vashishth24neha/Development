@@ -89,7 +89,11 @@ submitButton.addEventListener("click", function (event) {
 discardButton.addEventListener("click", function () {
     closeDialogBox();
 });
+const dialogButton1 = document.querySelector(".button-3");
+const dialogButton2 = document.querySelector(".button-4");
 
+dialogButton1.addEventListener("click", closeDialogBox);
+dialogButton2.addEventListener("click", closeDialogBox);
 
 
 });
