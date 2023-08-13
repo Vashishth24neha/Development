@@ -12,37 +12,59 @@
 <body>
     <div class="container">
         <div class="welcome-message">Add Employee</div>
+        <!-- ... -->
+        <!-- ... -->
         <form class="input-grid">
-            <input type="text" class="input-box" placeholder="first name">
-            <input type="text" class="input-box" placeholder="last name">
-            <input type="text" class="input-box" placeholder="email" name="email">
-            <input type="text" class="input-box" placeholder="phone no" name="phone">
-            <div class="error" id="emailError"></div>
-            <div class="error" id="phoneError"></div>
-            <select class="input-box">
-                <option value="option1">Testing</option>
-                <option value="option2">development</option>
-                <option value="option3">Operations</option>
-                <option value="option4">Accounts</option>
+            <div class="input-row">
+                <div class="input-col">
+                    <input type="text" class="input-box" placeholder="FIRST NAME">
+                </div>
+                <div class="input-col">
+                    <input type="text" class="input-box" placeholder="LAST NAME">
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-col">
+                    <input type="text" class="input-box" placeholder="EMAIL" name="email">
+                    <div class="error" id="emailError"></div>
+                </div>
+                <div class="input-col">
+                    <input type="text" class="input-box" placeholder="PHONE NO" name="phone">
+                    <div class="error" id="phoneError"></div>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-col">
+                    <div class="select-input">
+                        <select class="input-box" id="domain" name="domain">
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="option1">Testing</option>
+                            <option value="option2">Development</option>
+                            <option value="option3">Operations</option>
+                            <option value="option4">Accounts</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
 
-            </select>
-            <div class="button-container">
+            <div class="button-row">
                 <button class="button button-1">Discard</button>
-                <button class="button button-2">submit</button>
+                <button class="button button-2">Submit</button>
             </div>
         </form>
+        <!-- ... -->
+
+        <!-- ... -->
+
         <div class="dialog-container" id="dialogContainer">
             <div class="dialog-box">
-                <h2 class="dialog-heading">Dialog Box Heading</h2>
+                <h2 class="dialog-heading">Are you sure?</h2>
                 <div class="button-container-dialog">
                     <button class="dialog-button button-3">Button 1</button>
                     <button class="dialog-button button-4">Button 2</button>
                 </div>
             </div>
         </div>
-        
-        
-        
     </div>
     <script src="./sript1.js" defer></script>
 </body>
